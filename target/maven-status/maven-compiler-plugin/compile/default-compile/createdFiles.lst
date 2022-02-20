@@ -1,0 +1,7 @@
+com\vitelco\ordermanagement\controller\OrderController.class
+com\vitelco\ordermanagement\model\OrderItem$Category.class
+com\vitelco\ordermanagement\model\Order.class
+com\vitelco\ordermanagement\OrdermanagementApplication.class
+com\vitelco\ordermanagement\model\OrderItem.class
+com\vitelco\ordermanagement\model\Product.class
+com\vitelco\ordermanagement\model\Customer.class
