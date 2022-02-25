@@ -16,7 +16,7 @@ public class OrdermanagementApplication {
 
 		SpringApplication.run(OrdermanagementApplication.class, args);
 
-		Customer customer = new Customer(1, "Olya", "Babakulyyeva");
+		/* Customer customer = new Customer(1, "Olya", "Babakulyyeva");
 		Customer customer2 = new Customer(2, "Can", "Ozturk");
 
 		OrderItem itm1 = new OrderItem(1, "iphone", 1, 15000, OrderItem.Category.Electronics);
@@ -27,7 +27,7 @@ public class OrdermanagementApplication {
 		items.add(itm1);
 		items.add(itm2);
 		Order order = new Order(1, customer, items);
-		log.info("Orders: {}", order);
+		log.info("Orders: {}", order); */
 	}
 
 }
