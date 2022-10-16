@@ -21,11 +21,6 @@ pipeline {
                 sh 'echo Done!'
             }
         }
-        post {
-            always{testResults: 'target/surefire-reports/*.xml, allowEmptyResults=true'
-
-            }
-        }
 
     }
 }
