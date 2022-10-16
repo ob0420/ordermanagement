@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Git Checkout'){
             steps{
-                checkout scm: [$class: 'GitSCM', userRemoteConfigs: [[credentialsId: 'github-ssh-key', url: 'git@github.com:ob0420/ordermanagement.git']]]
+                checkout scm: [$class: 'GitSCM', userRemoteConfigs: [[credentialsId: 'github-ssh-key', url: 'https://github.com/ob0420/ordermanagement.git']]]
             }
         }
         stage('Build') {
