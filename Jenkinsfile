@@ -20,6 +20,11 @@ pipeline {
             steps{
                 sh 'echo Done!'
             }
+            post {
+                always {
+                    junit 'target/surefire-reports/*.xml' 
+                }
+            }
         }
 
     }
