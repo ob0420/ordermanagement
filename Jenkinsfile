@@ -16,6 +16,11 @@ pipeline {
                 sh 'mvn --batch-mode -Dmaven.test.failure.ignore=true test'
             }
         }
+        stage('Docker Build'){
+            steps{
+                
+            }
+        }
         stage('Deploy'){
             steps{
                 sh 'echo Done!'
