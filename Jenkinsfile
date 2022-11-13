@@ -12,12 +12,12 @@ pipeline {
             }
         }
         stage('Test'){
-            steps{
+            steps {
                 sh 'mvn --batch-mode -Dmaven.test.failure.ignore=true test'
             }
         }
         stage('Deploy'){
-            steps{
+            steps {
                 sh 'echo Done!'
             }
             post {
