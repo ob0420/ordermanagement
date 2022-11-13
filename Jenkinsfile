@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent{
+           docker-agent { image 'maven:3.8.1-adoptopenjdk-11' }
+    }
     stages {
         stage('Git Checkout'){
             steps{
@@ -17,9 +19,6 @@ pipeline {
             }
         }
         stage('Back-end') {
-            agent{
-                docker-agent { image 'maven:3.8.1-adoptopenjdk-11' }
-            }
             steps{
                 sh 'mvn --version'
             }
