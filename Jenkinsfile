@@ -1,7 +1,5 @@
 pipeline {
-    agent{
-           docker-agent { image 'maven:3.8.1-adoptopenjdk-11' }
-    }
+    agent any
     stages {
         stage('Git Checkout'){
             steps{
@@ -16,11 +14,6 @@ pipeline {
         stage('Test'){
             steps{
                 sh 'mvn --batch-mode -Dmaven.test.failure.ignore=true test'
-            }
-        }
-        stage('Back-end') {
-            steps{
-                sh 'mvn --version'
             }
         }
         stage('Deploy'){
